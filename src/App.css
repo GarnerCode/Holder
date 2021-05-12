@@ -4,27 +4,6 @@
 }
 
 /*Mixins*/
-/*Item Rarities*/
-.itemCommon {
-  background-color: #cccccc;
-}
-
-.itemUncommon {
-  background-color: #56ff56;
-}
-
-.itemRare {
-  background-color: #386dff;
-}
-
-.itemEpic {
-  background-color: #9d34ff;
-}
-
-.itemLegendary {
-  background-color: #ffa32b;
-}
-
 .App {
   font-family: "Roboto", sans-serif;
   text-align: center;
@@ -63,6 +42,6 @@
 }
 
 .App .inventory .itemBlock img {
-  width: 50%;
+  width: 100%;
 }
 /*# sourceMappingURL=App.css.map */

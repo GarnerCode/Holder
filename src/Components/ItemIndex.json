@@ -1,0 +1,52 @@
+{
+    "armor" : [
+        {
+            "name": "Breastplate",
+            "image": "url"
+        },
+        {
+            "name": "Chain Mail",
+            "image": "url"
+        },
+        {
+            "name": "Chain Shirt",
+            "image": "url"
+        },
+        {
+            "name": "Half Plate",
+            "image": "url"
+        },
+        {
+            "name": "Hide",
+            "image": "url"
+        },
+        {
+            "name": "Leather",
+            "image": "url"
+        },
+        {
+            "name": "Padded",
+            "image": "url"
+        },
+        {
+            "name": "Plate",
+            "image": "url"
+        },
+        {
+            "name": "Ring Mail",
+            "image": "url"
+        },
+        {
+            "name": "Scale Mail",
+            "image": "url"
+        },
+        {
+            "name": "Splint",
+            "image": "url"
+        },
+        {
+            "name": "Studded Leather",
+            "image": "url"
+        }
+    ]
+}
