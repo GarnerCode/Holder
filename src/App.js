@@ -18,14 +18,13 @@ function App() {
     <div className="App">
       <Navbar />
       <button onClick={handleDisplayItemForm}>
-        {displayItemForm ? 'Cancel' : 'Add Item'}
+        {displayItemForm ? 'CANCEL' : 'ADD ITEM'}
       </button>
       {displayItemForm && <ItemForm 
         inventoryArray={inventoryArray}
         setInventoryArray={setInventoryArray}
       />}
       <h1>Inventory</h1>
-      <hr/>
       <Inventory 
         inventoryArray={inventoryArray}
         setInventoryArray={setInventoryArray}

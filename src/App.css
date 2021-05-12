@@ -11,24 +11,55 @@
 }
 
 .App .navbar {
-  background-color: #040408;
+  border-bottom: 2px solid white;
+  margin-bottom: 1em;
 }
 
 .App .navbar h1 {
-  display: inline;
   text-align: left;
+  margin: 0;
 }
 
-.App .item-form form label,
-.App .item-form form input {
-  border-radius: 5px;
+.App .navbar p {
+  text-align: left;
+  margin: 0;
+  margin-bottom: 1em;
+}
+
+.App button {
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 1em;
+  margin: 1em;
+}
+
+.App button:hover {
+  background-color: white;
+  color: #14142a;
+}
+
+.App .item-form form select {
   display: block;
-  text-align: center;
   margin: auto auto;
+  margin-bottom: 1em;
 }
 
 .App .item-form form button {
-  border-radius: 5px;
+  border: 2px solid white;
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  border-radius: 3px;
+  font-weight: bold;
+  font-size: 1em;
+  margin: 1em;
+}
+
+.App .item-form form button:hover {
+  background-color: white;
+  color: #14142a;
 }
 
 .App .inventory .itemBlock {
@@ -36,12 +67,48 @@
   -webkit-box-shadow: 2px 2px 10px black;
           box-shadow: 2px 2px 10px black;
   color: black;
+  background-color: black;
   text-align: center;
   width: 90%;
   margin: auto auto;
+  margin-bottom: 3em;
 }
 
 .App .inventory .itemBlock img {
   width: 100%;
+}
+
+.App .inventory .itemBlock button {
+  border: none;
+  margin: 0;
+}
+
+.App .inventory .itemBlock button:hover {
+  color: #fa3c3c;
+  background: none;
+}
+
+@media only screen and (min-width: 760px) {
+  .App .navbar h1 {
+    font-size: 3em;
+  }
+  .App .navbar p {
+    font-size: 2em;
+  }
+  .App button {
+    font-size: 2em;
+  }
+  .App .item-form form select {
+    font-size: 2em;
+  }
+  .App .item-form form button {
+    font-size: 2em;
+  }
+  .App .inventory {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
 }
 /*# sourceMappingURL=App.css.map */

@@ -27,6 +27,7 @@ const ItemForm = ({inventoryArray, setInventoryArray}) => {
                     "Plate",
                     "Ring Mail",
                     "Scale Mail",
+                    "Shield",
                     "Splint",
                     "Studded Leather"
                 ]);
