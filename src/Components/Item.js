@@ -1,7 +1,6 @@
-import React, {useState} from 'react';
+import React from 'react';
 
-const Item = ({item, itemName, itemImage, inventoryArray, setInventoryArray}) => {
-    const [itemCount, setItemCount] = useState(1);
+const Item = ({item, itemImage, inventoryArray, setInventoryArray}) => {
 
     const deleteHandler = () => {
         setInventoryArray(inventoryArray.filter((el) => el.id !== item.id));

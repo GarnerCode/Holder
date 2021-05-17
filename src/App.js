@@ -23,6 +23,8 @@ function App() {
       {displayItemForm && <ItemForm 
         inventoryArray={inventoryArray}
         setInventoryArray={setInventoryArray}
+        displayItemForm={displayItemForm}
+        setDisplayItemForm={setDisplayItemForm}
       />}
       <h1>Inventory</h1>
       <Inventory 

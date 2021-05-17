@@ -18,6 +18,7 @@
   font-weight: bold;
   font-size: 1em;
   margin: 1em;
+  transition: background, color 0.3s;
   &:hover {
     background-color: white;
     color: #14142a;
@@ -31,7 +32,13 @@
   .navbar {
     border-bottom: 2px solid white;
     margin-bottom: 1em;
+    text-align: left;
+    img {
+      display: inline;
+      width: 4em;
+    }
     h1 {
+      display: inline;
       text-align: left;
       margin: 0;
     }
@@ -39,6 +46,11 @@
       text-align: left;
       margin: 0;
       margin-bottom: 1em;
+    }
+    button {
+      float: right;
+      margin: 0;
+      border: none;
     }
   }
   button {
@@ -72,6 +84,7 @@
       button {
         border: none;
         margin: 0;
+        font-size: 1em;
         &:hover {
           color: rgb(250, 60, 60);
           background: none;
@@ -84,8 +97,14 @@
 @media only screen and (min-width: 760px) {
   .App {
     .navbar {
+      text-align: left;
+      img {
+        display: inline;
+        width: 4em;
+      }
       h1 {
         font-size: 3em;
+        display: inline;
       }
       p {
         font-size: 2em;
@@ -107,6 +126,21 @@
     .inventory {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
+      .itemBlock {
+        width: 90%;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .App {
+    .inventory {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      .itemBlock {
+        width: 70%;
+      }
     }
   }
 }

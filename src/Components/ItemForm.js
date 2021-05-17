@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-const ItemForm = ({inventoryArray, setInventoryArray}) => {
+const ItemForm = ({inventoryArray, setInventoryArray, displayItemForm, setDisplayItemForm}) => {
 
     const [itemType, setItemType] = useState("default");
     const [typeSelected, setTypeSelected] = useState(false);
@@ -141,6 +141,7 @@ const ItemForm = ({inventoryArray, setInventoryArray}) => {
             ...inventoryArray,
             {name: itemSelected, image: itemSelected, id: Math.random() * 1000}
         ]);
+        setDisplayItemForm(displayItemForm => !displayItemForm);
     }
 
     return (

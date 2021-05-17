@@ -3,7 +3,8 @@ import React from 'react';
 const Navbar = () => {
     return (
         <div className="navbar">
-            <h1>Holder</h1>
+            <img src="favicon.png" alt="" />
+            <h1> Holder</h1>
             <p>D&D Inventory Management</p>
         </div>
     )
